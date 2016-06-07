@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/class_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/fenlei_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/xinwen_rb1"
+                    style="@style/radio_style"
+                    android:checked="true"
+                    android:text="川菜" />
+
+                <RadioButton
+                    android:id="@+id/xinwen_rb2"
+                    style="@style/radio_style"
+                    android:text="粤菜" />
+
+                <RadioButton
+                    android:id="@+id/xinwen_rb3"
+                    style="@style/radio_style"
+                    android:text="湘菜" />
+
+                <RadioButton
+                    android:id="@+id/xinwen_rb4"
+                    style="@style/radio_style"
+                    android:text="鲁菜" />
+
+                <RadioButton
+                    android:id="@+id/xinwen_rb5"
+                    style="@style/radio_style"
+                    android:text="苏菜" />
+
+                <RadioButton
+                    android:id="@+id/xinwen_rb6"
+                    style="@style/radio_style"
+                    android:text="浙菜" />
+
+                <RadioButton
+                    android:id="@+id/xinwen_rb7"
+                    style="@style/radio_style"
+                    android:text="闽菜" />
+                <RadioButton
+                    android:id="@+id/xinwen_rb8"
+                    style="@style/radio_style"
+                    android:text="白菜" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/xinwen_indicator"
+                android:layout_width="60dp"
+                android:layout_height="2dp"
+                android:background="#E30E0C" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E30E0C" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fenlei_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
